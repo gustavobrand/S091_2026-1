@@ -6,6 +6,7 @@ public class Endereco {
     private String estado;
     private String pais;    
 
+    // Exemplo de construtor com apenas os campos obrigatórios
     public Endereco(String rua, String numero) {
         this.rua = rua;
         this.numero = numero;
