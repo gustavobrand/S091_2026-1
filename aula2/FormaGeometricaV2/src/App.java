@@ -8,8 +8,13 @@ public class App {
 		System.out.println(forma2);
 		System.out.println(forma3);
         System.out.println();
-		FormaGeometrica.mostrar(forma1);
-		FormaGeometrica.mostrar(forma2);
-		FormaGeometrica.mostrar(forma3);
+		App.mostrar(forma1);
+		App.mostrar(forma2);
+		App.mostrar(forma3);
     }
+
+	public static void mostrar(FormaGeometrica forma) {
+		float resultado = forma.calculaArea();
+        System.out.println("Area calculada: " + resultado);
+	}
 }
