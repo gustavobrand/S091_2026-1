@@ -12,6 +12,17 @@
         "cwd": "${workspaceFolder}"
       },
       "problemMatcher": []
+    },
+    {
+      "type": "java (buildArtifact)",
+      "mainClass": "Main",
+      "targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+      "elements": [
+        "${compileOutput}",
+        "${dependencies}"
+      ],
+      "problemMatcher": [],
+      "label": "java (buildArtifact): APS-T1"
     }
   ]
 }

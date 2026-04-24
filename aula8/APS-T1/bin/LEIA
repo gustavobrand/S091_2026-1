@@ -1,0 +1,8 @@
+O trabalho visa implementar CLEAN CODE E SOLID em um programa que esta funcionando normamente.
+Ele salva pessoas fisicas e juridicas, lista os salarios das pessoas fisicas e remove qualquer tipo de pessoa.
+O programa também possibilita o salvamento dos dados numa lista ou mapa. A parte da lista
+esta pronta, a do mapa, você precisam implementar usando SOLID.
+Este programa esta implementado numa arquitetura de 3 camada (apresentacao -> modelo -> dados)
+Em cada arquivo, existe dicas, do que é necessario fazer.
+Busque no que foi passado em sala de aula, para implementar estas alterações no programa.
+As altearações não podem alterar o comportamento do programa.

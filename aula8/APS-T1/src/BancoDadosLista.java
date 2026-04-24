@@ -2,53 +2,40 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-
-// DICA: essa classe salva pessoa em uma lista. Esta funcionando corretamente.
 public class BancoDadosLista implements BancoDados {
 
-	
-	private List<Pessoa> l = new ArrayList<Pessoa>();
-	
-	@Override
-	public void salvar(Pessoa p) {
-		l.add(p);
+	private final List<Pessoa> pessoas = new ArrayList<Pessoa>();
 
+	@Override
+	public void salvar(Pessoa pessoa) {
+		pessoas.add(pessoa);
 	}
 
 	@Override
 	public void remover(Integer idPessoa) {
-		Iterator<Pessoa> it = l.iterator();
-		
-		while(it.hasNext()) {
-			Pessoa p = it.next();
-			if(p.getId().equals(idPessoa)) {
-				it.remove();
+		Iterator<Pessoa> iterator = pessoas.iterator();
+		while (iterator.hasNext()) {
+			Pessoa pessoa = iterator.next();
+			if (pessoa.getId().equals(idPessoa)) {
+				iterator.remove();
 				break;
 			}
 		}
-
 	}
-	
-	
-	
 
 	@Override
-	public Pessoa buscar(Pessoa pe) {
-		Iterator<Pessoa> it = l.iterator();
-		
-		while(it.hasNext()) {
-			Pessoa p = it.next();
-			if(p.getId().equals(pe.getId())) {
-				return p;				
+	public Pessoa buscar(Integer idPessoa) {
+		for (Pessoa pessoa : pessoas) {
+			if (pessoa.getId().equals(idPessoa)) {
+				return pessoa;
 			}
 		}
 		return null;
 	}
 
 	@Override
-	public List<Pessoa> buscar() {
-	
-		return l;
+	public List<Pessoa> buscarTodos() {
+		return new ArrayList<Pessoa>(pessoas);
 	}
 
 }

@@ -6,8 +6,8 @@ public interface BancoDados {
 	
 	public void remover(Integer idPessoa);
 	
-	public Pessoa buscar(Pessoa p);
+	public Pessoa buscar(Integer idPessoa);
 	
-	public List<Pessoa> buscar();
+	public List<Pessoa> buscarTodos();
 	
 }

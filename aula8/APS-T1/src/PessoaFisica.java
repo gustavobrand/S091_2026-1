@@ -18,9 +18,5 @@ public class PessoaFisica extends Pessoa {
 	public void setSalario(Float salario) {
 		this.salario = salario;
 	}
-	
-	
-	
-	
-	
+
 }

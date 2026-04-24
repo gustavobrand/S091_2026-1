@@ -1,29 +1,31 @@
 public class Pessoa {
 
-	protected String no;// nome da pessoa
-	protected String end;// endereco
+	protected String nome;
+	protected String endereco;
 	protected Integer id;
-	
-	
-	public String getNo() {
-		return no;
+
+	public String getNome() {
+		return nome;
 	}
-	public void setNo(String no) {
-		this.no = no;
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public String getEnd() {
-		return end;
+
+	public String getEndereco() {
+		return endereco;
 	}
-	public void setEnd(String end) {
-		this.end = end;
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
+
 	public Integer getId() {
 		return id;
 	}
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	
-	
-	
+
 }
